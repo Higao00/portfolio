@@ -6,7 +6,7 @@ type BoxProps = {
 
 const Transitions = ({ children }: BoxProps) => {
     return (
-        <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth }} transition={{ duration: 1 }}>
+        <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth }} transition={{ duration: 0.5 }}>
             {children}
         </motion.div>
     )

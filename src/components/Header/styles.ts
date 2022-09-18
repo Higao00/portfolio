@@ -9,6 +9,8 @@ export const Container = styled.main`
     height: 110px;
     width: 100vw;
 
+    z-index: 10;
+
     bottom: 0;
 
     position: fixed;
@@ -23,7 +25,6 @@ export const Container = styled.main`
         justify-content: space-around;
     }
 `
-
 export const ContainerLogo = styled.div`
     display: flex;
     align-items: center;
@@ -48,7 +49,6 @@ export const LogoPhoto = styled.img`
     width: 80px;
     border-radius: 100px;
 `
-
 export const MenuDesktop = styled.nav`
     display: none;
 
@@ -79,9 +79,8 @@ export const MenuDesktop = styled.nav`
         }
     }
 `
-
 export const MenuMobile = styled.nav`
-    position: absolute;
+    position: fixed;
     z-index: 2;
 
     height: calc(100vh - 110px);
@@ -113,7 +112,7 @@ export const MenuMobile = styled.nav`
                 font-family: ${({ theme }) => theme.fonts.medium};
                 color: ${({ theme }) => theme.colors.shape};
                 text-decoration: none;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 margin-left: 1rem;
 
                 :hover {
@@ -127,7 +126,6 @@ export const MenuMobile = styled.nav`
         display: none;
     }
 `
-
 export const ContainerButtonMenuMobile = styled.button<PropsButton>`
     z-index: 3;
 

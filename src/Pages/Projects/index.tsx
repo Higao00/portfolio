@@ -1,4 +1,4 @@
-import Transitions from "../Transitions"
+import Transitions from "../../components/Transitions"
 import * as S from "./styles"
 
 const Projects = () => {

@@ -1,11 +1,11 @@
 import { Routes, Route, useLocation } from "react-router-dom"
 import { AnimatePresence } from "framer-motion"
-import Contact from "../components/Contacts"
-import Formations from "../components/Formations"
-import Home from "../components/Home"
-import Projects from "../components/Projects"
-import Skills from "../components/Skills"
-import SocialNetworks from "../components/SocialNetworks"
+import Contact from "../Pages/Contacts"
+import Formations from "../Pages/Formations"
+import Home from "../Pages/Home"
+import Projects from "../Pages/Projects"
+import Skills from "../Pages/Skills"
+import SocialNetworks from "../Pages/SocialNetworks"
 
 const MainRoutes = () => {
     const location = useLocation()

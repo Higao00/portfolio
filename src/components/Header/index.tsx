@@ -4,6 +4,7 @@ import * as Icons from "@mui/icons-material"
 import themeColors from "../../theme/themeColors"
 
 import { motion } from "framer-motion"
+import data from "./data"
 
 const Header = () => {
     const [activeButtonMenuMobile, setActiveButtonMenuMobile] = useState(false)
@@ -16,44 +17,26 @@ const Header = () => {
                     <S.Logo>Higor Henrique</S.Logo>
 
                     <S.ContainerButtonMenuMobile activeButtonMobile={activeButtonMenuMobile} onClick={() => setActiveButtonMenuMobile(!activeButtonMenuMobile)}>
-                <b />
-                <b />
-                <b />
-            </S.ContainerButtonMenuMobile>
+                        <b />
+                        <b />
+                        <b />
+                    </S.ContainerButtonMenuMobile>
                 </S.ContainerLogo>
 
                 <S.MenuDesktop>
                     <ul>
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="/skills">Skills</a>
-                        </li>
-
-                        <li>
-                            <a href="/formations">Formations</a>
-                        </li>
-
-                        <li>
-                            <a href="/social-networks">Social Networks</a>
-                        </li>
-
-                        <li>
-                            <a href="/projects">Projects</a>
-                        </li>
-
-                        <li>
-                            <a href="/contacts">Contacts</a>
-                        </li>
+                        {data.map((data, index) => (
+                            <li key={index}>
+                                <a href={data.link}>{data.name}</a>
+                            </li>
+                        ))}
                     </ul>
                 </S.MenuDesktop>
             </S.Container>
 
             {activeButtonMenuMobile && (
                 <S.MenuMobile>
-                    <motion.ul initial={{ height: "100%" }} animate={{ height: "70%" }} exit={{ y: window.innerHeight }} transition={{ duration: 0.8 }}>
+                    <motion.ul initial={{ height: "100%" }} animate={{ height: "85%" }} exit={{ y: window.innerHeight }} transition={{ duration: 0.8 }}>
                         <li>
                             <Icons.Home fontSize="large" style={{ color: themeColors.colors.shape }} />
                             <a href="/">Home</a>
