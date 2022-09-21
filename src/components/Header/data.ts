@@ -19,10 +19,10 @@ export default [
         name: "Social Networks",
     },
 
-    {
-        link: "/projects",
-        name: "Projects",
-    },
+    // {
+    //     link: "/projects",
+    //     name: "Projects",
+    // },
 
     {
         link: "/contacts",

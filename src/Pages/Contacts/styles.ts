@@ -1,8 +1,14 @@
 import styled from "styled-components"
 
 export const Container = styled.section`
-    width: 100%;
-    height: 100vh;
+    width: 90%;
+    min-height: calc(100vh - (110px + 2rem));
+    overflow: auto;
 
-    background-color: aqua;
+    padding: 1rem 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 `

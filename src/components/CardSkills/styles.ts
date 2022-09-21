@@ -13,8 +13,14 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
 
+    transition: 0.6s;
+
     @media (min-width: 1280px) {
         min-width: 250px;
+    }
+
+    :hover {
+        transform: scale(0.96);
     }
 `
 
