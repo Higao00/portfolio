@@ -9,15 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.3",
+    "@mui/lab": "^5.0.0-alpha.101",
     "@mui/material": "^5.10.3",
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.26",
     "framer-motion": "^7.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.36.1",
     "react-router-dom": "^6.3.0",
     "styled-components": "^5.3.5"
   },

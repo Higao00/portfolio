@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Button, TextField } from "@mui/material"
-import { TextareaAutosize } from "@mui/material"
+import LoadingButton from "@mui/lab/LoadingButton"
 
 export const Container = styled.section`
     width: 100%;
@@ -76,10 +76,25 @@ export const Form = styled.form`
     }
 `
 
+export const ContainerInput = styled.div`
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+`
+export const TitleError = styled.span`
+    font-size: 14px;
+    font-family: ${({ theme }) => theme.fonts.regular};
+    color: red;
+
+    padding: 0.5rem;
+`
 export const Input = styled(TextField)`
     width: 100%;
 `
-export const ButtonSubmit = styled(Button)`
+export const ButtonSubmit = styled(LoadingButton)`
     width: 90%;
 
     @media (min-width: 1280px) {
