@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <Transitions>
             <S.VideoDesktop autoPlay loop muted>
-                <source src="https://drive.google.com/uc?export=download&id=1tbjotXUsiQSB8J8lwLpOUyRQpPcfvO4X" type="video/mp4" />
+                <source src="https://drive.google.com/uc?export=download&id=12DCUfYQPi8bWYksCyDL--OKBhe9BrLtI" type="video/mp4" />
             </S.VideoDesktop>
 
             <S.VideoMobile autoPlay loop muted>
