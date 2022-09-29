@@ -57,10 +57,10 @@ const Header = () => {
                             <a href="/social-networks">Social Networks</a>
                         </li>
 
-                        <li>
+                        {/* <li>
                             <Icons.AccountTree fontSize="large" style={{ color: themeColors.colors.shape }} />
                             <a href="/projects">Projects</a>
-                        </li>
+                        </li> */}
 
                         <li>
                             <Icons.ContactPhone fontSize="large" style={{ color: themeColors.colors.shape }} />
