@@ -40,7 +40,9 @@ export const Header = styled.div`
 
 export const Image = styled.img`
     width: 100%;
-    height: auto;
+    object-fit: cover;
+
+    max-height: 200px;
 `
 
 export const Body = styled.div`
