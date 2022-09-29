@@ -4,7 +4,6 @@ import ThemeColors from "./theme/themeColors"
 import GlobalStyles from "./theme/global.styles"
 import App from "./App"
 import { ThemeProvider } from "styled-components"
-import { render } from "react-dom"
 
 const documentRoot: any = document.getElementById("root")
 const root = ReactDOM.createRoot(documentRoot)

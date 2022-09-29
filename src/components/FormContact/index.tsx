@@ -54,8 +54,8 @@ const FormContact = (props: IFormContact) => {
 
                 <S.ContainerInput>
                     <S.Input type={"email"} label="Email" variant="outlined" size="small" {...register("email", { required: true, pattern: /^\S+@\S+$/i })} />
-                    {errors.email && errors.email.type == "required" && <S.TitleError>This field is required!</S.TitleError>}
-                    {errors.email && errors.email.type == "pattern" && <S.TitleError>Invalid email, please enter a valid email!</S.TitleError>}
+                    {errors.email && errors.email.type === "required" && <S.TitleError>This field is required!</S.TitleError>}
+                    {errors.email && errors.email.type === "pattern" && <S.TitleError>Invalid email, please enter a valid email!</S.TitleError>}
                 </S.ContainerInput>
 
                 <S.ContainerInput>

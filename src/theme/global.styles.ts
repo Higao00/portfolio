@@ -1,8 +1,4 @@
 import { createGlobalStyle } from "styled-components"
-import bold from "../../public/assets/fonts/bold.ttf"
-import light from "../../public/assets/fonts/light.ttf"
-import medium from "../../public/assets/fonts/medium.ttf"
-import regular from "../../public/assets/fonts/regular.ttf"
 
 export default createGlobalStyle`
     html, body{
@@ -21,22 +17,22 @@ export default createGlobalStyle`
 
     @font-face {
         font-family: 'bold';
-        src: url(${bold}) format('truetype');
+        src: url("/assets/fonts/bold.ttf") format('truetype');
     }
 
     @font-face {
         font-family: 'light';
-        src: url(${light}) format('truetype');
+        src: url("/assets/fonts/light.ttf") format('truetype');
     }
 
     @font-face {
         font-family: 'medium';
-        src: url(${medium}) format('truetype');
+        src: url("/assets/fonts/medium.ttf") format('truetype');
     }
 
     @font-face {
         font-family: 'regular';
-        src: url(${regular}) format('truetype');
+        src: url("/assets/fonts/regular.ttf") format('truetype');
     }
 
 `
