@@ -37,35 +37,12 @@ const Header = () => {
             {activeButtonMenuMobile && (
                 <S.MenuMobile>
                     <motion.ul initial={{ height: "100%" }} animate={{ height: "85%" }} exit={{ y: window.innerHeight }} transition={{ duration: 0.8 }}>
-                        <li>
-                            <Icons.Home fontSize="large" style={{ color: themeColors.colors.shape }} />
-                            <a href="/">Home</a>
-                        </li>
-
-                        <li>
-                            <Icons.DynamicFeed fontSize="large" style={{ color: themeColors.colors.shape }} />
-                            <a href="/skills">Skills</a>
-                        </li>
-
-                        <li>
-                            <Icons.ImportContacts fontSize="large" style={{ color: themeColors.colors.shape }} />
-                            <a href="/formations">Formations</a>
-                        </li>
-
-                        <li>
-                            <Icons.ConnectWithoutContact fontSize="large" style={{ color: themeColors.colors.shape }} />
-                            <a href="/social-networks">Social Networks</a>
-                        </li>
-
-                        {/* <li>
-                            <Icons.AccountTree fontSize="large" style={{ color: themeColors.colors.shape }} />
-                            <a href="/projects">Projects</a>
-                        </li> */}
-
-                        <li>
-                            <Icons.ContactPhone fontSize="large" style={{ color: themeColors.colors.shape }} />
-                            <a href="/contacts">Contacts</a>
-                        </li>
+                        {data.map((data, index) => (
+                            <li key={index}>
+                                <data.icon fontSize="large" style={{ color: themeColors.colors.shape }} />
+                                <a href={data.link}>{data.name}</a>
+                            </li>
+                        ))}
                     </motion.ul>
                 </S.MenuMobile>
             )}
